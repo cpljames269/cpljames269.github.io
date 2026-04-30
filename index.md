@@ -81,3 +81,22 @@ Military veteran and cybersecurity engineer with over 15 years of experience des
  *Salt Lake City, UT* | 2027
 
 ---
+
+
+<script>
+  const easterEgg = `
+  +---------------------------------------------------+
+  |  root@cpljames:~# systemctl status easter-egg     |
+  |  ● easter-egg.service - Hidden Console Greeting   |
+  |     Loaded: loaded (/etc/systemd/system/...)      |
+  |     Active: active (running)                      |
+  |                                                   |
+  |  Welcome to the backend.                          |
+  |  If you are digging around in the console,        |
+  |  we should probably connect.                      |
+  |                                                   |
+  |  Initiate handshake: cpljames@pm.me               |
+  +---------------------------------------------------+
+  `;
+  console.log(easterEgg);
+</script>
