@@ -27,7 +27,7 @@
     "Establishing secure handshake with Recruiter_Node_01",
     "Warning: Coke levels critically low. Initiating refill protocol.",
     "Allowing traffic on port 443 (Resume Parsing)",
-    "Deep Packet Inspection: Found 100% genuine experience."
+    "Deep Packet Inspection: Found 100% genuine experience.",
 	"It took me longer to create this than it would for me to fix your network"
   ];
 
