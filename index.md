@@ -1,3 +1,69 @@
+<style>
+  #sniffer-container {
+    background-color: #0a0a0a;
+    color: #00ff00;
+    font-family: monospace;
+    font-size: 0.9em;
+    padding: 15px;
+    border-radius: 5px;
+    height: 160px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.1);
+    border: 1px solid #333;
+  }
+  .packet-line { margin: 3px 0; }
+  .joke-packet { color: #ffeb3b; font-weight: bold; }
+</style>
+
+<div id="sniffer-container"></div>
+
+<script>
+  const snifferContainer = document.getElementById('sniffer-container');
+  const protocols = ['TCP', 'UDP', 'ICMP'];
+  const jokes = [
+    "Packet Dropped: HR Buzzword Detected",
+    "Routing caffeine to local interface...",
+    "Establishing secure handshake with Recruiter_Node_01",
+    "Warning: Coke levels critically low. Initiating refill protocol.",
+    "Allowing traffic on port 443 (Resume Parsing)",
+    "Deep Packet Inspection: Found 100% genuine experience."
+	"It took me longer to create this than it would for me to fix your network"
+  ];
+
+  function getRandomIP() {
+    return Math.floor(Math.random() * 255) + '.' + 
+           Math.floor(Math.random() * 255) + '.' + 
+           Math.floor(Math.random() * 255) + '.' + 
+           Math.floor(Math.random() * 255);
+  }
+
+  function generatePacketLog() {
+    const time = new Date().toISOString().substring(11, 23);
+    
+    if (Math.random() < 0.08) { 
+      const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+      return `<div class="packet-line joke-packet">[SYSTEM] ${time} - ${randomJoke}</div>`;
+    }
+    
+    const src = getRandomIP();
+    const dst = getRandomIP();
+    const proto = protocols[Math.floor(Math.random() * protocols.length)];
+    const length = Math.floor(Math.random() * 1500) + 40;
+    
+    return `<div class="packet-line">${time} IP ${src} > ${dst}: ${proto}, length ${length}</div>`;
+  }
+
+  setInterval(() => {
+    snifferContainer.innerHTML += generatePacketLog();
+    if (snifferContainer.children.length > 8) {
+      snifferContainer.removeChild(snifferContainer.firstChild);
+    }
+  }, 900);
+</script>
+
+
+
 # James Anderson
 Maricopa, Az | Number available upon request<br>
 cpljames@pm.me<br>
