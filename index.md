@@ -1,5 +1,5 @@
 # James Anderson
-Maricopa, Az | (480) 622-3380
+Maricopa, Az | Number available on request
 cpljames@pm.me
 LinkedIn: linkedin.com/in/cpljames-2-69-ar
 GitHub: github.com/cpljames269
