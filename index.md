@@ -1,7 +1,7 @@
 # James Anderson
-Maricopa, Az | Number available on request
-cpljames@pm.me
-LinkedIn: linkedin.com/in/cpljames-2-69-ar
+Maricopa, Az | Number available on request<br>
+cpljames@pm.me<br>
+LinkedIn: linkedin.com/in/cpljames-2-69-ar<br>
 GitHub: github.com/cpljames269
 
 ---
